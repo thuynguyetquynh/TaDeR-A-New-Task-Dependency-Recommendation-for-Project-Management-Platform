@@ -16,6 +16,8 @@ To preproduct the result:
 - Run notebook code/Embedding/Get_GloVe_features.ipynb to save GloVe embedding data
 - Run notebook code/Embedding/Get_FastText_features.ipynb to save FastText embedding data 
 - Experiments:
-  - Code for Training and Testing baselines is in folder code/Traditional approach
-  - Code for Training and Testing to find best features is in folder code/Find best features
-  - Code for Training and Testing to find best models is in folder code/Find best models   
+  - Traditional approach's code is in folder code/Traditional_approach
+  - To find best combinations of features: code/Find_best_features.ipynb
+  - To find best models with different time filters: code/Find_best_GloVe_models.ipynb and code/Find_best_FastText_models.ipynb 
+  - add_feature = None means no time features applied, add_feature = 1 means using only Cre_cre feature, add_feature = 1 means using only Cre_up feature, and add_feature = 3 means using both.
+  - time_filter_days is set 60 as default.
